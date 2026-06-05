@@ -1,0 +1,273 @@
+{
+  "profile": {
+    "name": "Pawan Shrestha",
+    "headline": "Computer Engineering Graduate | AI & Data Science Enthusiast",
+    "shortBio": "Recently graduated from Nepal Engineering College with a Bachelor's in Computer Engineering. Passionate about building intelligent systems with Python, machine learning, and data-driven software.",
+    "bio": "I'm Pawan Shrestha, a Computer Engineering graduate from Nepal Engineering College. I love exploring technology and solving problems through code. My interests include Artificial Intelligence, Machine Learning, Data Science, and Software Development. I enjoy working on projects that help me learn new skills and create useful solutions. I am eager to begin my professional journey and contribute to innovative and impactful projects. Currently seeking opportunities in Software Engineering, AI/ML, and Data Science to grow my skills and gain industry experience.",
+    "avatar": "/images/pawan-avatar.jpeg",
+    "resumeUrl": "/resume/pawan-shrestha-resume.pdf",
+    "email": "pawanshrestha0702@gmail.com",
+    "location": "Bhaktapur, Nepal",
+    "availability": "Open to junior software, AI, and data science opportunities"
+  },
+  "settings": {
+    "siteTitle": "Pawan Shrestha | AI & Software Portfolio",
+    "metaDescription": "Portfolio of Pawan Shrestha, a computer engineering graduate specializing in AI, machine learning, Python, and data science.",
+    "theme": "dark",
+    "sectionOrder": [
+      "hero",
+      "about",
+      "skills",
+      "projects",
+      "education",
+      "experience",
+      "achievements",
+      "notes",
+      "contact"
+    ]
+  },
+  "socials": [
+    {
+      "id": "github",
+      "label": "GitHub",
+      "url": "https://github.com/PawanSths",
+      "icon": "github"
+    },
+    {
+      "id": "linkedin",
+      "label": "LinkedIn",
+      "url": "https://www.linkedin.com/in/pawan-shrestha-a2972b363/",
+      "icon": "linkedin"
+    },
+    {
+      "id": "email",
+      "label": "Email",
+      "url": "mailto:pawanshrestha0702@gmail.com",
+      "icon": "mail"
+    }
+  ],
+  "skills": [
+    {
+      "id": "30072b6f-ec52-4c6c-8615-26d755a1a4ff",
+      "name": "Javascript",
+      "category": "Languages",
+      "level": 70,
+      "featured": false,
+      "status": "published"
+    },
+    {
+      "id": "f6b05ea8-3132-4865-9443-51052d41ddec",
+      "name": "HTML, CSS",
+      "category": "Languages",
+      "level": 70,
+      "featured": true,
+      "status": "published"
+    },
+    {
+      "id": "969911bd-4aef-4392-ba84-3bd45eb9d28c",
+      "name": "VS code",
+      "category": "Tools",
+      "level": 70,
+      "featured": true,
+      "status": "published"
+    },
+    {
+      "id": "python",
+      "name": "Python",
+      "category": "Languages",
+      "level": 92,
+      "featured": true,
+      "status": "published"
+    },
+    {
+      "id": "ml",
+      "name": "Machine Learning",
+      "category": "AI & Data",
+      "level": 82,
+      "featured": true,
+      "status": "published"
+    },
+    {
+      "id": "data-science",
+      "name": "Data Science",
+      "category": "AI & Data",
+      "level": 84,
+      "featured": true,
+      "status": "published"
+    },
+    {
+      "id": "sql",
+      "name": "SQL",
+      "category": "Tools",
+      "level": 78,
+      "featured": false,
+      "status": "published"
+    },
+    {
+      "id": "react",
+      "name": "React",
+      "category": "Engineering",
+      "level": 74,
+      "featured": true,
+      "status": "published"
+    },
+    {
+      "id": "api",
+      "name": "REST APIs",
+      "category": "Engineering",
+      "level": 80,
+      "featured": false,
+      "status": "published"
+    },
+    {
+      "id": "notebook",
+      "name": "Jupyter",
+      "category": "Tools",
+      "level": 86,
+      "featured": false,
+      "status": "published"
+    },
+    {
+      "id": "git",
+      "name": "Git & GitHub",
+      "category": "Tools",
+      "level": 82,
+      "featured": false,
+      "status": "published"
+    },
+    {
+      "id": "pandas",
+      "name": "Pandas & NumPy",
+      "category": "AI & Data",
+      "level": 88,
+      "featured": true,
+      "status": "published"
+    }
+  ],
+  "projects": [
+    {
+      "id": "1235bd13-6a6c-4a79-a154-d5a123597d50",
+      "title": "Melomatch",
+      "summary": "Song sharing Platform for music lovers",
+      "description": "This Project is a dedicated platform to the music lovers where they can post, share their taste on music to strangers. Users can interact with each other. This project uses React for frontend, Node for Backend and MongoDB for database",
+      "stack": [
+        "React",
+        "Nodejs",
+        "MongoDB"
+      ],
+      "image": "/images/project-melomatch.svg",
+      "liveUrl": "",
+      "repoUrl": "https://github.com/PawanSths/Mellomatch",
+      "featured": true,
+      "status": "published"
+    },
+    {
+      "id": "8de7e8af-4969-4af8-b916-930b04f31857",
+      "title": "Urban Sprawl Prediction",
+      "summary": "An ML model which predicts the urban expansion in major cities of Nepal.",
+      "description": "Built U-Net/ConvLSTM model achieving 85% accuracy on satellite image classification across 3 cities; predicted urban sprawl with\n78% precision for 2030 forecasts. Implemented data preprocessing pipeline using pandas and scikit-learn. Generated predictive\nvisualizations for urban expansion patterns until 2030\n",
+      "stack": [
+        "Python",
+        "Scikit-learn",
+        "Pandas",
+        "Tensorflow"
+      ],
+      "image": "/images/project-urban-sprawl.svg",
+      "liveUrl": "",
+      "repoUrl": "https://github.com/PawanSths/UrbanSprawlPrediction",
+      "featured": true,
+      "status": "published"
+    },
+    {
+      "id": "student-risk",
+      "title": "Student Success Predictor",
+      "summary": "An ML model that identifies at-risk students early using academic and behavioral data with explainable results.",
+      "description": "Developed a classification pipeline using scikit-learn that predicts student performance based on attendance, grades, and engagement metrics. Includes SHAP-based feature importance for transparent, interpretable predictions.",
+      "stack": [
+        "Python",
+        "scikit-learn",
+        "SHAP",
+        "SQL",
+        "Streamlit"
+      ],
+      "image": "/images/project-student-predictor.svg",
+      "liveUrl": "",
+      "repoUrl": "https://github.com/pawanshrestha/student-risk",
+      "featured": true,
+      "status": "published"
+    }
+  ],
+  "education": [
+    {
+      "id": "298a7b20-044b-4b4d-8c98-f79a780fe260",
+      "title": "+2 Science",
+      "organization": "Khwopa College",
+      "location": "Bhaktapur, Nepla",
+      "startDate": "Jul, 2019",
+      "endDate": "Apr, 2021",
+      "summary": "Completed +2 Science from Khwopa College",
+      "status": "published"
+    },
+    {
+      "id": "nec-bce",
+      "title": "Bachelor's in Computer Engineering",
+      "organization": "Nepal Engineering College",
+      "location": "Bhaktapur, Nepal",
+      "startDate": "Dec, 2021 ",
+      "endDate": "Mar, 2026",
+      "summary": "Completed Bachelor's in Computer Engineering. Core subjects: Computer Programming, DBMS, OS, DSA, Computer Network, AI",
+      "status": "published"
+    }
+  ],
+  "experience": [
+    {
+      "id": "ml-intern",
+      "title": "Web Development Intern",
+      "organization": "Aramex ",
+      "location": "Kathmandu, Nepal",
+      "startDate": "May, 2025 ",
+      "endDate": "Oct, 2025",
+      "summary": "Developed and maintained parts of the company website, performed testing to identify issues, and provided suggestions to improve\nfunctionality and user experience. Collaborated with backend team on API integration",
+      "status": "published"
+    }
+  ],
+  "achievements": [
+    {
+      "id": "learning-track",
+      "title": "AI & Data Science Learning Path",
+      "summary": "Completed structured learning in Python, data analysis, machine learning workflows, and modern software engineering practices through online courses and personal projects.",
+      "year": "2025",
+      "status": "published"
+    }
+  ],
+  "certifications": [
+    {
+      "id": "cd1ec9e7-fb92-498d-8cbd-5ed2fdd95ab5",
+      "title": "Intermediate Python",
+      "issuer": "DataCamp",
+      "date": "2024",
+      "credentialUrl": "https://www.datacamp.com/completed/statement-of-accomplishment/course/52fb8a281834ac69919700d687a2be12a325f17b?utm_medium=organic_social&utm_campaign=sharewidget&utm_content=soa",
+      "summary": "Developed intermediate Python skills including functions, data structures, and working with libraries for data analysis and real\nworld applications. ",
+      "status": "published"
+    },
+    {
+      "id": "google-ml",
+      "title": "Machine Learning Crash Course",
+      "issuer": "Google",
+      "date": "2025",
+      "credentialUrl": "https://developers.google.com/machine-learning/crash-course",
+      "summary": "Completed Google's fast-paced, practical introduction to machine learning concepts, covering linear regression, neural networks, and classification.",
+      "status": "published"
+    },
+    {
+      "id": "ibm-data-science",
+      "title": "Understanding LLMs and Retrieval-Augmented Generation (RAG)",
+      "issuer": "PDSC",
+      "date": "2025",
+      "credentialUrl": "https://coursera.org/",
+      "summary": "Gained foundational knowledge of Large Language Models (LLMs) and Retrieval-Augmented Generation (RAG), including concepts\nof AI-driven text generation and real-world applications. ",
+      "status": "published"
+    }
+  ],
+  "media": []
+}

@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 600" role="img" aria-label="Melomatch music sharing platform">
+  <rect width="960" height="600" fill="#0a0a0a"/>
+  <rect x="40" y="40" width="880" height="520" rx="14" fill="#141414"/>
+  <rect x="70" y="72" width="520" height="200" rx="10" fill="#20201e"/>
+  <circle cx="106" cy="110" r="18" fill="#be5b38"/>
+  <path d="M130 110h120M130 140h200" stroke="#f6f3ee" stroke-width="10" stroke-linecap="round" opacity="0.2"/>
+  <path d="M80 240h500" stroke="#f6f3ee" stroke-width="1" opacity="0.06"/>
+  <rect x="80" y="180" width="40" height="40" rx="4" fill="#0f766e" opacity="0.4"/>
+  <rect x="130" y="180" width="40" height="40" rx="4" fill="#2563eb" opacity="0.4"/>
+  <rect x="180" y="180" width="40" height="40" rx="4" fill="#be5b38" opacity="0.4"/>
+  <rect x="230" y="180" width="40" height="40" rx="4" fill="#fb8f67" opacity="0.4"/>
+  <rect x="280" y="180" width="40" height="40" rx="4" fill="#2dd4bf" opacity="0.4"/>
+  <rect x="70" y="300" width="820" height="230" rx="10" fill="#20201e"/>
+  <circle cx="106" cy="340" r="18" fill="#2563eb" opacity="0.3"/>
+  <circle cx="106" cy="340" r="7" fill="#2563eb"/>
+  <path d="M136 340h140" stroke="#f6f3ee" stroke-width="12" stroke-linecap="round" opacity="0.15"/>
+  <path d="M136 368h80" stroke="#f6f3ee" stroke-width="8" stroke-linecap="round" opacity="0.1"/>
+  <path d="M340 320l24-60 40 30 32-80 48 56 36-42" fill="none" stroke="#2dd4bf" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" opacity="0.5"/>
+  <g opacity="0.5">
+    <rect x="560" y="310" width="150" height="40" rx="6" fill="#2b2b28"/>
+    <rect x="560" y="360" width="150" height="40" rx="6" fill="#2b2b28"/>
+    <rect x="560" y="410" width="150" height="40" rx="6" fill="#2b2b28"/>
+    <rect x="560" y="460" width="150" height="40" rx="6" fill="#2b2b28"/>
+    <circle cx="580" cy="330" r="6" fill="#be5b38"/>
+    <circle cx="580" cy="380" r="6" fill="#2563eb"/>
+    <circle cx="580" cy="430" r="6" fill="#0f766e"/>
+    <circle cx="580" cy="480" r="6" fill="#fb8f67"/>
+    <path d="M600 330h60" stroke="#f6f3ee" stroke-width="6" stroke-linecap="round" opacity="0.3"/>
+    <path d="M600 380h80" stroke="#f6f3ee" stroke-width="6" stroke-linecap="round" opacity="0.3"/>
+    <path d="M600 430h50" stroke="#f6f3ee" stroke-width="6" stroke-linecap="round" opacity="0.3"/>
+    <path d="M600 480h70" stroke="#f6f3ee" stroke-width="6" stroke-linecap="round" opacity="0.3"/>
+  </g>
+  <rect x="740" y="310" width="130" height="190" rx="8" fill="#1a1a1a" stroke="#be5b38" stroke-width="2" stroke-opacity="0.4"/>
+  <rect x="755" y="328" width="100" height="100" rx="6" fill="#2b2b28"/>
+  <path d="M790 358v40l30-20z" fill="#be5b38"/>
+  <path d="M780 450h60" stroke="#f6f3ee" stroke-width="6" stroke-linecap="round" opacity="0.2"/>
+  <path d="M780 468h40" stroke="#f6f3ee" stroke-width="6" stroke-linecap="round" opacity="0.12"/>
+  <path d="M620 100q100-30 200 0" fill="none" stroke="#0f766e" stroke-width="3" opacity="0.4"/>
+  <path d="M620 120q100-30 200 0" fill="none" stroke="#2563eb" stroke-width="2" opacity="0.3"/>
+  <path d="M620 140q100-30 200 0" fill="none" stroke="#be5b38" stroke-width="2" opacity="0.2"/>
+</svg>

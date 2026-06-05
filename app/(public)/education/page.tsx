@@ -1,0 +1,30 @@
+import { getPortfolioContent, publishedOnly } from "@/lib/content-store";
+import { PageTransition } from "@/components/page-transition";
+
+export const dynamic = "force-dynamic";
+
+export default async function EducationPage() {
+  const content = publishedOnly(await getPortfolioContent());
+
+  return (
+    <PageTransition className="page-content">
+      <div className="page-header">
+        <p className="eyebrow">Education</p>
+        <h1>Academic background.</h1>
+      </div>
+      <div className="timeline">
+        {content.education.map((entry) => (
+          <article className="timeline-item" key={entry.id}>
+            <div className="timeline-dot" />
+            <div className="timeline-date">{entry.startDate} — {entry.endDate}</div>
+            <div className="timeline-content">
+              <h3>{entry.title}</h3>
+              <p className="timeline-org">{entry.organization} · {entry.location}</p>
+              <p>{entry.summary}</p>
+            </div>
+          </article>
+        ))}
+      </div>
+    </PageTransition>
+  );
+}

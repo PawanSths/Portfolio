@@ -1,0 +1,12 @@
+node_modules
+.next
+out
+.env
+.env.local
+.env.development
+.env.production
+.env*
+data/*.tmp
+public/uploads/*
+!public/uploads/.gitkeep
+npm-debug.log*
