@@ -8,7 +8,7 @@ const inter = Inter({
   display: "swap",
   variable: "--font-inter"
 });
-
+//small changes
 export const metadata: Metadata = {
   title: "Pawan Shrestha",
   description:
