@@ -1,20 +1,22 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Code, Brain, Wrench, Cog } from "lucide-react";
+import { Code, Layers, Database, Wrench, Lightbulb } from "lucide-react";
 
 const categoryIcons: Record<string, React.ReactNode> = {
   "Languages": <Code size={14} />,
-  "AI & Data": <Brain size={14} />,
-  "Tools": <Wrench size={14} />,
-  "Engineering": <Cog size={14} />
+  "Frameworks & Libraries": <Layers size={14} />,
+  "Databases": <Database size={14} />,
+  "Developer Tools": <Wrench size={14} />,
+  "Concepts": <Lightbulb size={14} />
 };
 
 const categoryColors: Record<string, string> = {
   "Languages": "var(--accent)",
-  "AI & Data": "var(--accent-3)",
-  "Tools": "var(--accent-2)",
-  "Engineering": "#8b5cf6"
+  "Frameworks & Libraries": "var(--accent-3)",
+  "Databases": "#2dd4bf",
+  "Developer Tools": "var(--accent-2)",
+  "Concepts": "#8b5cf6"
 };
 
 export function SkillOrbit({ groups }: { groups: Record<string, { id: string; name: string; category: string }[]> }) {
@@ -30,7 +32,7 @@ export function SkillOrbit({ groups }: { groups: Record<string, { id: string; na
           transition={{ duration: 0.5, delay: gi * 0.1 }}
         >
           <div className="skill-orbit-label" style={{ color: categoryColors[category] || "var(--accent)" }}>
-            {categoryIcons[category] || <Cog size={14} />}
+            {categoryIcons[category] || <Code size={14} />}
             <span>{category}</span>
           </div>
           <div className="skill-orbit-pills">

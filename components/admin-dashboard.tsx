@@ -387,7 +387,7 @@ function moveItem(tab: Tab, index: number, direction: -1 | 1, content: Portfolio
 function blankItem(tab: Tab, id: string): EditableItem {
   const baseStatus = { id, status: "draft" as const };
   if (tab === "projects") return { ...baseStatus, title: "New project", summary: "Replace this project summary.", description: "Replace this project description.", stack: ["Python"], image: "/images/project-cms.svg", liveUrl: "", repoUrl: "", featured: false };
-  if (tab === "skills") return { ...baseStatus, name: "New skill", category: "Engineering", level: 70, featured: false };
+  if (tab === "skills") return { ...baseStatus, name: "New skill", category: "Languages", level: 70, featured: false };
   if (tab === "education" || tab === "experience") return { ...baseStatus, title: "New entry", organization: "Organization", location: "Location", startDate: "2026", endDate: "Present", summary: "Replace this timeline summary." };
   if (tab === "achievements") return { ...baseStatus, title: "New achievement", summary: "Replace this achievement summary.", year: "2026" };
   if (tab === "certifications") return { ...baseStatus, title: "New certification", issuer: "Issuer", date: "2026", credentialUrl: "https://example.com", summary: "Replace this certification summary." };

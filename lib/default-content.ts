@@ -34,14 +34,21 @@ export const defaultContent: PortfolioContent = {
     { id: "email", label: "Email", url: "mailto:pawan.shrestha@example.com", icon: "mail" }
   ],
   skills: [
+    { id: "javascript", name: "JavaScript", category: "Languages", level: 75, featured: true, status: "published" },
     { id: "python", name: "Python", category: "Languages", level: 92, featured: true, status: "published" },
-    { id: "typescript", name: "TypeScript", category: "Languages", level: 76, featured: true, status: "published" },
-    { id: "ml", name: "Machine Learning", category: "AI & Data", level: 82, featured: true, status: "published" },
-    { id: "data-science", name: "Data Science", category: "AI & Data", level: 84, featured: true, status: "published" },
-    { id: "sql", name: "SQL", category: "Tools", level: 78, featured: false, status: "published" },
-    { id: "react", name: "React", category: "Engineering", level: 74, featured: true, status: "published" },
-    { id: "api", name: "REST APIs", category: "Engineering", level: 80, featured: false, status: "published" },
-    { id: "notebook", name: "Jupyter", category: "Tools", level: 86, featured: false, status: "published" }
+    { id: "html", name: "HTML", category: "Languages", level: 80, featured: true, status: "published" },
+    { id: "css", name: "CSS", category: "Languages", level: 75, featured: true, status: "published" },
+    { id: "react", name: "React", category: "Frameworks & Libraries", level: 74, featured: true, status: "published" },
+    { id: "pandas", name: "Pandas", category: "Frameworks & Libraries", level: 88, featured: true, status: "published" },
+    { id: "numpy", name: "NumPy", category: "Frameworks & Libraries", level: 85, featured: true, status: "published" },
+    { id: "sql", name: "SQL", category: "Databases", level: 78, featured: true, status: "published" },
+    { id: "vscode", name: "VS Code", category: "Developer Tools", level: 90, featured: true, status: "published" },
+    { id: "git", name: "Git", category: "Developer Tools", level: 82, featured: true, status: "published" },
+    { id: "github", name: "GitHub", category: "Developer Tools", level: 82, featured: true, status: "published" },
+    { id: "notebook", name: "Jupyter Notebook", category: "Developer Tools", level: 86, featured: true, status: "published" },
+    { id: "ml", name: "Machine Learning", category: "Concepts", level: 82, featured: true, status: "published" },
+    { id: "data-science", name: "Data Science", category: "Concepts", level: 84, featured: true, status: "published" },
+    { id: "rest-apis", name: "REST APIs", category: "Concepts", level: 80, featured: true, status: "published" }
   ],
   projects: [
     {

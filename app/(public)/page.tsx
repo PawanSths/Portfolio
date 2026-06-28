@@ -122,7 +122,6 @@ export default async function HomePage() {
         <div className="page-content">
           <div className="page-header">
             <p className="eyebrow">Skills</p>
-            <h1>A focused toolkit for AI-ready software.</h1>
           </div>
           <SkillOrbit groups={skillGroups} />
         </div>

@@ -10,7 +10,7 @@ export type SocialLink = {
 export type Skill = {
   id: string;
   name: string;
-  category: "Languages" | "AI & Data" | "Engineering" | "Tools";
+  category: "Languages" | "Frameworks & Libraries" | "Databases" | "Developer Tools" | "Concepts";
   level: number;
   featured: boolean;
   status: PublishState;

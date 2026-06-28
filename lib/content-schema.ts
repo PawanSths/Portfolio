@@ -32,7 +32,7 @@ export const portfolioSchema = z.object({
     z.object({
       id: z.string(),
       name: z.string().min(1),
-      category: z.enum(["Languages", "AI & Data", "Engineering", "Tools"]),
+      category: z.enum(["Languages", "Frameworks & Libraries", "Databases", "Developer Tools", "Concepts"]),
       level: z.number().min(1).max(100),
       featured: z.boolean(),
       status: publishState

@@ -400,13 +400,13 @@ img { max-width: 100%; }
 }
 .skill-orbit-pills { display: flex; flex-wrap: wrap; gap: 8px; }
 .skill-pill {
-  display: inline-flex; align-items: center; gap: 6px;
-  padding: 6px 14px;
+  display: inline-flex; align-items: center; gap: 8px;
+  padding: 10px 20px;
   border-radius: 999px;
   background: rgba(139, 92, 246, 0.08);
   border: 1px solid rgba(139, 92, 246, 0.15);
   color: var(--text);
-  font-size: 0.88rem; font-weight: 600;
+  font-size: 0.95rem; font-weight: 600;
   cursor: default;
   transition: all var(--transition);
   will-change: transform;
