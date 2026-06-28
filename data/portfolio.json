@@ -172,7 +172,7 @@
         "Pandas",
         "Tensorflow"
       ],
-      "image": "/images/project-urban-sprawl.svg",
+      "image": "/images/project-urban.png",
       "liveUrl": "",
       "repoUrl": "https://github.com/PawanSths/UrbanSprawlPrediction",
       "featured": true,
@@ -180,19 +180,19 @@
     },
     {
       "id": "student-risk",
-      "title": "Student Success Predictor",
-      "summary": "An ML model that identifies at-risk students early using academic and behavioral data with explainable results.",
-      "description": "Developed a classification pipeline using scikit-learn that predicts student performance based on attendance, grades, and engagement metrics. Includes SHAP-based feature importance for transparent, interpretable predictions.",
+      "title": "CleanCity",
+      "summary": "A web app that helps people report city problems like garbage, potholes, and drainage issues using photos and location.",
+      "description": "CleanCity allows users to upload photos of public issues with their location. The app uses AI to identify the problem and helps city officials track, manage, and resolve complaints through an admin dashboard.",
       "stack": [
-        "Python",
-        "scikit-learn",
-        "SHAP",
-        "SQL",
-        "Streamlit"
+        "Next.js",
+        "React",
+        "TypeScript",
+        "Supabase",
+        "OpenStreetMap"
       ],
-      "image": "/images/project-student-predictor.svg",
+      "image": "/images/project-cleancity.png",
       "liveUrl": "",
-      "repoUrl": "https://github.com/pawanshrestha/student-risk",
+      "repoUrl": "https://github.com/PawanSths/Cleancity",
       "featured": true,
       "status": "published"
     }

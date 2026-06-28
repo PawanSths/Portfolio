@@ -1,4 +1,3 @@
-import bcrypt from "bcryptjs";
 import { SignJWT, jwtVerify } from "jose";
 import { cookies } from "next/headers";
 
@@ -11,18 +10,8 @@ function getSecret() {
 
 export async function verifyCredentials(email: string, password: string) {
   const adminEmail = process.env.ADMIN_EMAIL || "admin@pawan.dev";
-  const passwordHash = process.env.ADMIN_PASSWORD_HASH;
-  const fallbackPassword = process.env.ADMIN_PASSWORD || "change-this-password";
-
-  if (email !== adminEmail) {
-    return false;
-  }
-
-  if (passwordHash) {
-    return bcrypt.compare(password, passwordHash);
-  }
-
-  return password === fallbackPassword;
+  const adminPassword = process.env.ADMIN_PASSWORD || "change-this-password";
+  return email === adminEmail && password === adminPassword;
 }
 
 export async function createSession(email: string) {

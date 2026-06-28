@@ -2,12 +2,16 @@ import { promises as fs } from "fs";
 import path from "path";
 import { portfolioSchema } from "@/lib/content-schema";
 import { defaultContent } from "@/lib/default-content";
+import { getCloudContent, saveCloudContent } from "@/lib/cloud-store";
 import type { PortfolioContent } from "@/types/content";
 
 const dataDir = path.join(process.cwd(), "data");
 const dataFile = path.join(dataDir, "portfolio.json");
 
 export async function getPortfolioContent(): Promise<PortfolioContent> {
+  const cloud = await getCloudContent();
+  if (cloud) return cloud;
+
   await ensureDataFile();
   const raw = await fs.readFile(dataFile, "utf8");
   const parsed = portfolioSchema.safeParse(JSON.parse(raw));
@@ -21,10 +25,14 @@ export async function getPortfolioContent(): Promise<PortfolioContent> {
 
 export async function savePortfolioContent(content: PortfolioContent) {
   const parsed = portfolioSchema.parse(content);
+
   await fs.mkdir(dataDir, { recursive: true });
   const tmpFile = `${dataFile}.tmp`;
   await fs.writeFile(tmpFile, JSON.stringify(parsed, null, 2));
   await fs.rename(tmpFile, dataFile);
+
+  await saveCloudContent(parsed);
+
   return parsed;
 }
 
