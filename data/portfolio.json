@@ -4,7 +4,7 @@
     "headline": "Computer engineer. I build models and software that measure the real world.",
     "shortBio": "Recent Computer Engineering graduate with a strong foundation in full-stack web development, machine learning, and AI systems.",
     "bio": "I'm Pawan Shrestha, a Computer Engineering graduate from Nepal Engineering College. I spent my final year training a U-Net on satellite imagery to forecast urban sprawl across Kathmandu, Pokhara, and Hyderabad, it hit 85% accuracy on land-classification. I also build practical web apps end to end: a complaint-reporting platform for city maintenance and a music-sharing social app. I write Python, and I care about models that hold up outside a Jupyter notebook: real data pipelines, real APIs, real deployments. I'm looking for a junior role in software engineering, ML, or data science where I can do that work for a product with users.",
-    "avatar": "/images/pawan-avatar.jpg",
+    "avatar": "/images/pawan-avatars.jpg",
     "resumeUrl": "/resume/Pawan_Shrestha_CV.pdf",
     "email": "pawanshrestha0702@gmail.com",
     "location": "Bhaktapur, Nepal",
