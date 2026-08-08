@@ -8,11 +8,10 @@ const inter = Inter({
   display: "swap",
   variable: "--font-inter"
 });
-//small changes
 export const metadata: Metadata = {
-  title: "Pawan Shrestha",
-  description:
-    "Portfolio for Pawan Shrestha, a computer engineering graduate focused on AI, ML, Python, data science, and software engineering."
+  title: "Pawan Shrestha — Computer Engineer",
+  description:  
+    "Recent Computer Engineering graduate with a strong foundation in full-stack web development, machine learning,and AI systems."
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

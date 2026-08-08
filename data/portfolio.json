@@ -1,18 +1,18 @@
 {
   "profile": {
     "name": "Pawan Shrestha",
-    "headline": "Computer Engineering Graduate | AI & Data Science Enthusiast",
-    "shortBio": "Recently graduated from Nepal Engineering College with a Bachelor's in Computer Engineering. Passionate about building intelligent systems with Python, machine learning, and data-driven software.",
-    "bio": "I'm Pawan Shrestha, a Computer Engineering graduate from Nepal Engineering College. I love exploring technology and solving problems through code. My interests include Artificial Intelligence, Machine Learning, Data Science, and Software Development. I enjoy working on projects that help me learn new skills and create useful solutions. I am eager to begin my professional journey and contribute to innovative and impactful projects. Currently seeking opportunities in Software Engineering, AI/ML, and Data Science to grow my skills and gain industry experience.",
+    "headline": "Computer engineer. I build models and software that measure the real world.",
+    "shortBio": "Recent Computer Engineering graduate with a strong foundation in full-stack web development, machine learning, and AI systems.",
+    "bio": "I'm Pawan Shrestha, a Computer Engineering graduate from Nepal Engineering College. I spent my final year training a U-Net on satellite imagery to forecast urban sprawl across Kathmandu, Pokhara, and Hyderabad, it hit 85% accuracy on land-classification. I also build practical web apps end to end: a complaint-reporting platform for city maintenance and a music-sharing social app. I write Python, and I care about models that hold up outside a Jupyter notebook: real data pipelines, real APIs, real deployments. I'm looking for a junior role in software engineering, ML, or data science where I can do that work for a product with users.",
     "avatar": "/images/pawan-avatar.jpeg",
-    "resumeUrl": "/resume/Pawan-Shrestha-cv.pdf",
+    "resumeUrl": "/resume/Pawan_Shrestha_CV.pdf",
     "email": "pawanshrestha0702@gmail.com",
     "location": "Bhaktapur, Nepal",
     "availability": "Open to junior software, AI, and data science opportunities"
   },
   "settings": {
-    "siteTitle": "Pawan Shrestha | AI & Software Portfolio",
-    "metaDescription": "Portfolio of Pawan Shrestha, a computer engineering graduate specializing in AI, machine learning, Python, and data science.",
+    "siteTitle": "Pawan Shrestha — Computer Engineer",
+    "metaDescription": "Computer Engineering student building intelligent AI/ML systems, autonomous LLM agents, and modern full-stack web applications.",
     "theme": "dark",
     "sectionOrder": [
       "hero",
@@ -178,26 +178,10 @@
   ],
   "projects": [
     {
-      "id": "1235bd13-6a6c-4a79-a154-d5a123597d50",
-      "title": "Melomatch",
-      "summary": "Song sharing Platform for music lovers",
-      "description": "This Project is a dedicated platform to the music lovers where they can post, share their taste on music to strangers. Users can interact with each other. This project uses React for frontend, Node for Backend and MongoDB for database",
-      "stack": [
-        "React",
-        "Nodejs",
-        "MongoDB"
-      ],
-      "image": "/images/project-melomatch.svg",
-      "liveUrl": "",
-      "repoUrl": "https://github.com/PawanSths/Mellomatch",
-      "featured": true,
-      "status": "published"
-    },
-    {
       "id": "8de7e8af-4969-4af8-b916-930b04f31857",
       "title": "Urban Sprawl Prediction",
-      "summary": "An ML model which predicts the urban expansion in major cities of Nepal.",
-      "description": "Built U-Net/ConvLSTM model achieving 85% accuracy on satellite image classification across 3 cities; predicted urban sprawl with\n78% precision for 2030 forecasts. Implemented data preprocessing pipeline using pandas and scikit-learn. Generated predictive\nvisualizations for urban expansion patterns until 2030\n",
+      "summary": "A U-Net that forecasts where Kathmandu, Lalitpur, and Bhaktapur will grow by 2030.",
+      "description": "Trained a U-Net on Landsat satellite imagery to classify built-up vs non-built-up land, reaching 85% accuracy across the three cities. I chained it into a ConvLSTM that extends those classifications forward, so the model outputs 2030 sprawl maps at 78% precision. The pipeline — image tiling, augmentation, training, and map rendering — is all pandas, scikit-learn, and TensorFlow, and I wrote the visualizations that turn predictions into readable growth maps.\n",
       "stack": [
         "Python",
         "Scikit-learn",
@@ -211,10 +195,28 @@
       "status": "published"
     },
     {
+      "id": "4938afe9-9429-4e23-93e2-e5780f36c606",
+      "title": "AI Agent with RAG & Tool-Calling",
+      "summary": "A Python AI agent built with LangChain. It answers questions from general knowledge, from your own local documents (RAG), from live web search, or with a calculator",
+      "description": "An LLM-powered conversational agent that combines Retrieval-Augmented Generation (RAG) with dynamic tool-calling and memory. Built using LangChain and the Gemini API, it ingests custom documents into local vector databases (Chroma) for grounded context and executes live web searches for real-time query routing, all accessible via an interactive Streamlit UI.",
+      "stack": [
+        "PythonPython",
+        "LangChain",
+        "Gemini API",
+        "Chroma",
+        "Streamlit"
+      ],
+      "image": "/images/project-cms.svg",
+      "liveUrl": "",
+      "repoUrl": "https://github.com/PawanSths/langchain",
+      "featured": true,
+      "status": "published"
+    },
+    {
       "id": "student-risk",
       "title": "CleanCity",
-      "summary": "A web app that helps people report city problems like garbage, potholes, and drainage issues using photos and location.",
-      "description": "CleanCity allows users to upload photos of public issues with their location. The app uses AI to identify the problem and helps city officials track, manage, and resolve complaints through an admin dashboard.",
+      "summary": "A civic reporting platform where a photo and GPS pin log a city issue for officials to resolve.",
+      "description": "Residents upload a photo of a problem — garbage, a pothole, a blocked drain — with their location. I built the classification step with an AI model that identifies the issue type so it routes to the right department, then an admin dashboard where officials track and close each complaint. It runs on Next.js with a Supabase backend and OpenStreetMap for geolocation.",
       "stack": [
         "Next.js",
         "React",
@@ -227,6 +229,40 @@
       "repoUrl": "https://github.com/PawanSths/Cleancity",
       "featured": true,
       "status": "published"
+    },
+    {
+      "id": "efb30e7b-f212-4ef2-b37e-b69309d2ebf6",
+      "title": "Near Beat",
+      "summary": "A full-stack web application that helps people discover, join, and chat about nearby real-world events in real time.",
+      "description": "NearBeat is a full-stack event discovery platform that connects users with nearby local activities. It features location-based event search, real-time participant chat, instant notifications, and secure user authentication built on a robust React, Node.js, and PostgreSQL stack.",
+      "stack": [
+        "React",
+        "TypeScript",
+        "Node.js",
+        "Express.js",
+        "PostgreSQL"
+      ],
+      "image": "/images/project-cms.svg",
+      "liveUrl": "",
+      "repoUrl": "https://github.com/PawanSths/NearShare",
+      "featured": true,
+      "status": "published"
+    },
+    {
+      "id": "1235bd13-6a6c-4a79-a154-d5a123597d50",
+      "title": "Melomatch",
+      "summary": "A social app where strangers post a song and discover what others are listening to.",
+      "description": "Users create profiles, post the song they can't stop replaying, and browse strangers' picks. I built the REST API in Node/Express with MongoDB for profiles and posts, and the React frontend handles auth, feed pagination, and a like system. The interesting part was designing the data model so a post can surface three different feed orders — recent, liked, and from people with overlapping taste.",
+      "stack": [
+        "React",
+        "Nodejs",
+        "MongoDB"
+      ],
+      "image": "/images/project-melomatch.svg",
+      "liveUrl": "",
+      "repoUrl": "https://github.com/PawanSths/Mellomatch",
+      "featured": true,
+      "status": "published"
     }
   ],
   "education": [
@@ -237,7 +273,7 @@
       "location": "Bhaktapur, Nepal",
       "startDate": "Jul, 2019",
       "endDate": "Apr, 2021",
-      "summary": "Completed +2 Science from Khwopa College",
+      "summary": "Physics, chemistry, and math,  the coursework that pushed me toward engineering and eventually programming.",
       "status": "published"
     },
     {
@@ -245,9 +281,9 @@
       "title": "Bachelor's in Computer Engineering",
       "organization": "Nepal Engineering College",
       "location": "Bhaktapur, Nepal",
-      "startDate": "Dec, 2021 ",
+      "startDate": "Feb, 2022 ",
       "endDate": "Mar, 2026",
-      "summary": "Completed Bachelor's in Computer Engineering. Core subjects: Computer Programming, DBMS, OS, DSA, Computer Network, AI",
+      "summary": "Final-year thesis was the urban sprawl U-Net. Core coursework covered algorithms, databases, OS, networks, and AI and I pulled most of it into hands-on projects rather than leaving it in lectures.",
       "status": "published"
     }
   ],
@@ -259,7 +295,7 @@
       "location": "Kathmandu, Nepal",
       "startDate": "May, 2025 ",
       "endDate": "Oct, 2025",
-      "summary": "Developed and maintained parts of the company website, performed testing to identify issues, and provided suggestions to improve\nfunctionality and user experience. Collaborated with backend team on API integration",
+      "summary": "As a Frontend Developer Intern at Aramex, I resolved React component rendering issues, fixed functional UI bugs, and improved overall application stability under the mentorship of senior engineers. I also maintained client-facing features in the customer portal, including updating delivery service locations to support expanding logistics operations.",
       "status": "published"
     }
   ],
@@ -267,28 +303,46 @@
     {
       "id": "learning-track",
       "title": "AI & Data Science Learning Path",
-      "summary": "Completed structured learning in Python, data analysis, machine learning workflows, and modern software engineering practices through online courses and personal projects.",
+      "summary": "Worked through Python, data analysis, and ML workflows in courses, then put each one to use in a real project, the U-Net being the largest.",
       "year": "2025",
       "status": "published"
     }
   ],
   "certifications": [
     {
+      "id": "70cea9d6-fa77-40da-9143-58a10635f8c8",
+      "title": "ML Summer School 2026",
+      "issuer": "Cohere Labs",
+      "date": "2026",
+      "credentialUrl": "https://credsverse.com/credentials/23ee4fe1-dcff-46c9-8126-518a8f204743",
+      "summary": "Participated in an applied machine\nlearning summer school program, engaging with current ML research and collaborative learning.",
+      "status": "published"
+    },
+    {
+      "id": "google-ml",
+      "title": "Agentic AI Foundations Associate",
+      "issuer": "Oracle",
+      "date": "2026",
+      "credentialUrl": "https://catalog-education.oracle.com/ords/certview/sharebadge?id=FECD43018497CF21D915C625C53CF166054E7B27F50D4AEF36CC98729801E75A",
+      "summary": "Certified foundational knowledge of agentic AI systems and\nautomation.",
+      "status": "published"
+    },
+    {
       "id": "cd1ec9e7-fb92-498d-8cbd-5ed2fdd95ab5",
       "title": "Intermediate Python",
       "issuer": "DataCamp",
       "date": "2024",
       "credentialUrl": "https://www.datacamp.com/completed/statement-of-accomplishment/course/52fb8a281834ac69919700d687a2be12a325f17b?utm_medium=organic_social&utm_campaign=sharewidget&utm_content=soa",
-      "summary": "Developed intermediate Python skills including functions, data structures, and working with libraries for data analysis and real\nworld applications. ",
+      "summary": "Intermediate Python: functions, data structures, and the pandas/NumPy workflow I now use daily for data analysis.",
       "status": "published"
     },
     {
-      "id": "google-ml",
-      "title": "Machine Learning Crash Course",
-      "issuer": "Google",
-      "date": "2025",
-      "credentialUrl": "https://developers.google.com/machine-learning/crash-course",
-      "summary": "Completed Google's fast-paced, practical introduction to machine learning concepts, covering linear regression, neural networks, and classification.",
+      "id": "efd81879-5991-4a94-94b3-0013d4802db1",
+      "title": "Career Essentials in Generative AI",
+      "issuer": "Microsoft and LinkedIn ",
+      "date": "2026",
+      "credentialUrl": "https://example.com",
+      "summary": "Explored core concepts of artificial intelligence, ethical considerations, prompt engineering techniques, and practical strategies for utilizing generative AI.",
       "status": "published"
     },
     {
@@ -297,7 +351,7 @@
       "issuer": "PDSC",
       "date": "2025",
       "credentialUrl": "https://coursera.org/",
-      "summary": "Gained foundational knowledge of Large Language Models (LLMs) and Retrieval-Augmented Generation (RAG), including concepts\nof AI-driven text generation and real-world applications. ",
+      "summary": "Learned how LLMs generate text and how retrieval-augmented generation grounds them in real data.",
       "status": "published"
     }
   ],

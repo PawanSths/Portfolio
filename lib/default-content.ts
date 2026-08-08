@@ -3,18 +3,18 @@ import type { PortfolioContent } from "@/types/content";
 export const defaultContent: PortfolioContent = {
   profile: {
     name: "Pawan Shrestha",
-    headline: "Computer Engineering Graduate | AI & Data Science Enthusiast",
-    shortBio: "Recently graduated from Nepal Engineering College with a Bachelor's in Computer Engineering. Passionate about building intelligent systems with Python, machine learning, and data-driven software.",
-    bio: "I'm Pawan Shrestha, a Computer Engineering graduate from Nepal Engineering College. I love exploring technology and solving problems through code. My interests include Artificial Intelligence, Machine Learning, Data Science, and Software Development. I enjoy working on projects that help me learn new skills and create useful solutions. I am eager to begin my professional journey and contribute to innovative and impactful projects. Currently seeking opportunities in Software Engineering, AI/ML, and Data Science to grow my skills and gain industry experience.",
-    avatar: "/images/pawan-avatar.svg",
-    resumeUrl: "/resume/pawan-shrestha-resume.pdf",
+    headline: "Computer engineer. I build models and software that measure the real world.",
+    shortBio: "Computer Engineering graduate who trains computer-vision models on satellite imagery and ships full-stack apps. Most recent work: a U-Net that predicts urban expansion in Nepali cities with 85% accuracy.",
+    bio: "I'm Pawan Shrestha, a Computer Engineering graduate from Nepal Engineering College. I spent my final year training a U-Net on satellite imagery to forecast urban sprawl across Kathmandu, Lalitpur, and Bhaktapur — it hit 85% accuracy on land-classification. I also build practical web apps end to end: a complaint-reporting platform for city maintenance and a music-sharing social app. I write Python and TypeScript daily, and I care about models that hold up outside a Jupyter notebook: real data pipelines, real APIs, real deployments. I'm looking for a junior role in software engineering, ML, or data science where I can do that work for a product with users.",
+    avatar: "/images/pawan-avatar.jpeg",
+    resumeUrl: "/resume/Pawan_Shrestha_CV.pdf",
     email: "pawan.shrestha@example.com",
     location: "Kathmandu, Nepal",
     availability: "Open to junior software, AI, and data science opportunities"
   },
   settings: {
-    siteTitle: "Pawan Shrestha | AI & Software Portfolio",
-    metaDescription: "Portfolio for Pawan Shrestha, a computer engineering graduate interested in AI, machine learning, Python, and data science.",
+    siteTitle: "Pawan Shrestha — Computer Engineer",
+    metaDescription: "I train computer-vision models on satellite imagery and ship the full-stack apps that use them. Built a U-Net forecasting urban sprawl in Nepali cities at 85% accuracy.",
     theme: "system",
     sectionOrder: [
       "hero",
@@ -52,26 +52,26 @@ export const defaultContent: PortfolioContent = {
   ],
   projects: [
     {
-      id: "traffic-vision",
-      title: "Traffic Pattern Vision Lab",
-      summary: "A computer vision dashboard for exploring traffic density trends from video frames.",
-      description: "Prototype combining Python analysis, model inference, and a clean dashboard to visualize congestion patterns.",
-      stack: ["Python", "OpenCV", "Pandas", "React"],
-      image: "/images/project-traffic.svg",
+      id: "urban-sprawl",
+      title: "Urban Sprawl Prediction",
+      summary: "A U-Net that forecasts where Kathmandu, Lalitpur, and Bhaktapur will grow by 2030.",
+      description: "Trained a U-Net on Landsat satellite imagery to classify built-up vs non-built-up land, reaching 85% accuracy across the three cities. Chained into a ConvLSTM that extends classifications forward to produce 2030 sprawl maps at 78% precision.",
+      stack: ["Python", "TensorFlow", "Pandas", "Scikit-learn"],
+      image: "/images/project-urban.png",
       liveUrl: "",
-      repoUrl: "https://github.com/",
+      repoUrl: "https://github.com/PawanSths/UrbanSprawlPrediction",
       featured: true,
       status: "published"
     },
     {
-      id: "student-risk",
-      title: "Student Success Predictor",
-      summary: "An ML model that identifies at-risk students early using academic data with explainable results.",
-      description: "A practical ML workflow using cleaned tabular data, model comparison, and interpretable feature importance.",
-      stack: ["Python", "scikit-learn", "SQL", "Streamlit"],
-      image: "/images/project-student.svg",
+      id: "cleancity",
+      title: "CleanCity",
+      summary: "A civic reporting platform where a photo and GPS pin log a city issue for officials to resolve.",
+      description: "Residents upload a photo of a problem — garbage, a pothole, a blocked drain — with their location. An AI model classifies the issue type to route it to the right department, and officials track and close complaints in an admin dashboard.",
+      stack: ["Next.js", "React", "TypeScript", "Supabase"],
+      image: "/images/project-cleancity.png",
       liveUrl: "",
-      repoUrl: "https://github.com/",
+      repoUrl: "https://github.com/PawanSths/Cleancity",
       featured: true,
       status: "published"
     }
@@ -84,19 +84,19 @@ export const defaultContent: PortfolioContent = {
       location: "Bhaktapur, Nepal",
       startDate: "2019",
       endDate: "2024",
-      summary: "Graduated with coursework across software engineering, algorithms, databases, computer networks, AI foundations, and engineering practice.",
+      summary: "Final-year thesis was the urban sprawl U-Net. Core coursework covered algorithms, databases, OS, networks, and AI — and I pulled most of it into hands-on projects rather than leaving it in lectures.",
       status: "published"
     }
   ],
   experience: [
     {
       id: "placeholder-internship",
-      title: "Software Engineering Intern",
-      organization: "Placeholder Organization",
+      title: "Web Development Intern",
+      organization: "Aramex",
       location: "Kathmandu, Nepal",
-      startDate: "2024",
-      endDate: "2024",
-      summary: "Placeholder experience entry. Replace with a real internship, project work, or freelance engagement.",
+      startDate: "2025",
+      endDate: "2025",
+      summary: "Shipped and maintained features on the company website, ran functional testing, and integrated frontend components with the backend team's REST endpoints.",
       status: "published"
     }
   ],

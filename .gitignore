@@ -6,7 +6,10 @@ out
 .env.development
 .env.production
 .env*
+!.env.example
 data/*.tmp
 public/uploads/*
 !public/uploads/.gitkeep
 npm-debug.log*
+*.log
+*.tsbuildinfo

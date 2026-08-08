@@ -64,8 +64,8 @@ export function ContactForm() {
         <input id="cf-email" name="email" type="email" placeholder="you@example.com" required />
       </div>
       <div className="field full">
-        <label htmlFor="cf-message">Message</label>
-        <textarea id="cf-message" name="message" placeholder="Write your message here..." required />
+        <label htmlFor="cf-message">What would you like to discuss?</label>
+        <textarea id="cf-message" name="message" placeholder="A role, a project idea, a dataset that needs a model..." required />
       </div>
       {state === "error" && (
         <p style={{ color: "#f87171", fontSize: "0.88rem" }}>{errorMsg}</p>

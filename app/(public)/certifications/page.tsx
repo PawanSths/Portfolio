@@ -1,5 +1,5 @@
 import { ExternalLink } from "lucide-react";
-import { getPortfolioContent, publishedOnly } from "@/lib/content-store";
+import { getPortfolioContent, publishedOnly } from "@/services/content-store";
 import { PageTransition } from "@/components/page-transition";
 
 export const dynamic = "force-dynamic";
@@ -11,7 +11,7 @@ export default async function CertificationsPage() {
     <PageTransition className="page-content">
       <div className="page-header">
         <p className="eyebrow">Certifications</p>
-        <h1>Credentials & courses.</h1>
+        <h1>Courses that changed how I build.</h1>
       </div>
       <div className="cert-grid">
         {content.certifications.map((cert) => (
@@ -24,7 +24,7 @@ export default async function CertificationsPage() {
             <p>{cert.summary}</p>
             {cert.credentialUrl && (
               <a className="cert-link" href={cert.credentialUrl} target="_blank" rel="noopener noreferrer">
-                View credential <ExternalLink size={14} />
+                Verify on {cert.issuer} <ExternalLink size={14} />
               </a>
             )}
           </article>

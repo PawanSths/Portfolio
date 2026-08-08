@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
-import { requireAdmin } from "@/lib/auth";
-import { getPortfolioContent, savePortfolioContent } from "@/lib/content-store";
+import { requireAdmin } from "@/services/auth";
+import { getPortfolioContent, savePortfolioContent } from "@/services/content-store";
 import { portfolioSchema } from "@/lib/content-schema";
 
 export async function GET() {

@@ -2,7 +2,7 @@ import { promises as fs } from "fs";
 import path from "path";
 import { portfolioSchema } from "@/lib/content-schema";
 import { defaultContent } from "@/lib/default-content";
-import { getCloudContent, saveCloudContent } from "@/lib/cloud-store";
+import { getCloudContent, saveCloudContent } from "@/services/cloud-store";
 import type { PortfolioContent } from "@/types/content";
 
 const dataDir = path.join(process.cwd(), "data");

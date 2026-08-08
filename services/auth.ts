@@ -4,13 +4,25 @@ import { cookies } from "next/headers";
 const cookieName = "portfolio_admin_session";
 
 function getSecret() {
-  const secret = process.env.AUTH_SECRET || "local-development-secret-change-me";
+  const secret = process.env.AUTH_SECRET;
+  if (!secret) {
+    if (process.env.NODE_ENV === "production") {
+      throw new Error("AUTH_SECRET is not configured.");
+    }
+    return new TextEncoder().encode("local-development-secret-change-me");
+  }
   return new TextEncoder().encode(secret);
 }
 
 export async function verifyCredentials(email: string, password: string) {
-  const adminEmail = process.env.ADMIN_EMAIL || "admin@pawan.dev";
-  const adminPassword = process.env.ADMIN_PASSWORD || "change-this-password";
+  const adminEmail = process.env.ADMIN_EMAIL;
+  const adminPassword = process.env.ADMIN_PASSWORD;
+  if (!adminEmail || !adminPassword) {
+    if (process.env.NODE_ENV === "production") {
+      throw new Error("Admin credentials are not configured.");
+    }
+    return email === "admin@pawan.dev" && password === "change-this-password";
+  }
   return email === adminEmail && password === adminPassword;
 }
 

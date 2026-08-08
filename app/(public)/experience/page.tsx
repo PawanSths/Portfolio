@@ -1,4 +1,4 @@
-import { getPortfolioContent, publishedOnly } from "@/lib/content-store";
+import { getPortfolioContent, publishedOnly } from "@/services/content-store";
 import { PageTransition } from "@/components/page-transition";
 
 export const dynamic = "force-dynamic";
@@ -10,7 +10,7 @@ export default async function ExperiencePage() {
     <PageTransition className="page-content">
       <div className="page-header">
         <p className="eyebrow">Experience</p>
-        <h1>Professional experience.</h1>
+        <h1>Where I have worked</h1>
       </div>
       <div className="timeline">
         {content.experience.map((entry) => (

@@ -1,10 +1,28 @@
 import { NextResponse } from "next/server";
 import { Resend } from "resend";
+import { clientKey, rateLimit } from "@/lib/rate-limit";
 
 export const dynamic = 'force-dynamic';
 
+function escapeHtml(value: string) {
+  return value
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#39;");
+}
+
 export async function POST(request: Request) {
   try {
+    const limit = rateLimit(`contact:${clientKey(request)}`, 5, 60 * 60 * 1000);
+    if (!limit.allowed) {
+      return NextResponse.json(
+        { message: "Too many messages from this address. Please try again later." },
+        { status: 429, headers: { "Retry-After": String(limit.retryAfterSeconds) } }
+      );
+    }
+
     const body = await request.json();
     const { name, email, message } = body;
 
@@ -31,7 +49,7 @@ export async function POST(request: Request) {
       replyTo: email,
       subject: `Portfolio Contact: ${name}`,
       text: `From: ${name} <${email}>\n\n${message}`,
-      html: `<p><strong>From:</strong> ${name} &lt;${email}&gt;</p><hr/><p>${message.replace(/\n/g, "<br/>")}</p>`,
+      html: `<p><strong>From:</strong> ${escapeHtml(name)} &lt;${escapeHtml(email)}&gt;</p><hr/><p>${escapeHtml(message).replace(/\n/g, "<br/>")}</p>`,
     });
 
     if (error) {

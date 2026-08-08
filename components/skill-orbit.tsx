@@ -11,15 +11,29 @@ const categoryIcons: Record<string, React.ReactNode> = {
   "Concepts": <Lightbulb size={14} />
 };
 
+// Shades of the same ochre family — warm, but distinct enough per category
 const categoryColors: Record<string, string> = {
-  "Languages": "var(--accent)",
-  "Frameworks & Libraries": "var(--accent-3)",
-  "Databases": "#2dd4bf",
-  "Developer Tools": "var(--accent-2)",
-  "Concepts": "#8b5cf6"
+  "Languages": "#d4a574",
+  "Frameworks & Libraries": "#b8956a",
+  "Databases": "#c49a6c",
+  "Developer Tools": "#a67c52",
+  "Concepts": "#e0b98a"
 };
 
-export function SkillOrbit({ groups }: { groups: Record<string, { id: string; name: string; category: string }[]> }) {
+// Skill pills grow with proficiency — most-used tools physically stand out
+const pillSizes: Record<string, { padding: string; fontSize: string }> = {
+  high: { padding: "12px 24px", fontSize: "1rem" },
+  medium: { padding: "10px 20px", fontSize: "0.95rem" },
+  low: { padding: "8px 16px", fontSize: "0.88rem" }
+};
+
+function sizeForLevel(level: number) {
+  if (level >= 85) return pillSizes.high;
+  if (level >= 75) return pillSizes.medium;
+  return pillSizes.low;
+}
+
+export function SkillOrbit({ groups }: { groups: Record<string, { id: string; name: string; category: string; level?: number }[]> }) {
   return (
     <div className="skill-orbit">
       {Object.entries(groups).map(([category, skills], gi) => (
@@ -36,20 +50,27 @@ export function SkillOrbit({ groups }: { groups: Record<string, { id: string; na
             <span>{category}</span>
           </div>
           <div className="skill-orbit-pills">
-            {skills.map((skill, i) => (
-              <motion.span
-                className="skill-pill"
-                key={skill.id}
-                initial={{ opacity: 0, scale: 0.8 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.35, delay: gi * 0.1 + i * 0.05 }}
-                whileHover={{ scale: 1.08, y: -3 }}
-                style={{ "--pill-color": categoryColors[category] || "var(--accent)" } as React.CSSProperties}
-              >
-                {skill.name}
-              </motion.span>
-            ))}
+            {skills.map((skill, i) => {
+              const size = sizeForLevel(skill.level ?? 75);
+              return (
+                <motion.span
+                  className="skill-pill"
+                  key={skill.id}
+                  initial={{ opacity: 0, scale: 0.8 }}
+                  whileInView={{ opacity: 1, scale: 1 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.35, delay: gi * 0.1 + i * 0.05 }}
+                  whileHover={{ scale: 1.08, y: -3 }}
+                  style={{
+                    padding: size.padding,
+                    fontSize: size.fontSize,
+                    "--pill-color": categoryColors[category] || "var(--accent)"
+                  } as React.CSSProperties}
+                >
+                  {skill.name}
+                </motion.span>
+              );
+            })}
           </div>
         </motion.div>
       ))}

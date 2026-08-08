@@ -52,7 +52,6 @@ export function PortfolioNav({ children }: { children: React.ReactNode }) {
       <nav className="top-navbar">
         <div className="navbar-inner">
           <a className="navbar-brand" href="#home" onClick={(e) => { e.preventDefault(); scrollToSection("#home"); }}>
-            <span className="brand-mark">PS</span>
             <span className="brand-name">Pawan Shrestha</span>
           </a>
 

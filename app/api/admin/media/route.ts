@@ -1,8 +1,8 @@
 import { promises as fs } from "fs";
 import path from "path";
 import { NextResponse } from "next/server";
-import { requireAdmin } from "@/lib/auth";
-import { getPortfolioContent, savePortfolioContent } from "@/lib/content-store";
+import { requireAdmin } from "@/services/auth";
+import { getPortfolioContent, savePortfolioContent } from "@/services/content-store";
 
 const allowedTypes = ["image/png", "image/jpeg", "image/webp", "image/svg+xml", "application/pdf"];
 

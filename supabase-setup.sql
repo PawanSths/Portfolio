@@ -11,3 +11,8 @@ CREATE TABLE IF NOT EXISTS portfolio_content (
 INSERT INTO portfolio_content (id, content, updated_at)
 VALUES ('singleton', '{}'::jsonb, NOW())
 ON CONFLICT (id) DO NOTHING;
+
+-- The app writes only through the Supabase service key (server-side),
+-- which bypasses row-level security. Enabling RLS blocks the public
+-- anon/authenticated keys from reading or modifying portfolio content.
+ALTER TABLE portfolio_content ENABLE ROW LEVEL SECURITY;

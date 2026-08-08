@@ -1,5 +1,5 @@
 import { Mail, MapPin } from "lucide-react";
-import { getPortfolioContent, publishedOnly } from "@/lib/content-store";
+import { getPortfolioContent, publishedOnly } from "@/services/content-store";
 import { PageTransition } from "@/components/page-transition";
 import { ContactForm } from "@/components/contact-form";
 
@@ -12,11 +12,11 @@ export default async function ContactPage() {
     <PageTransition className="page-content">
       <div className="page-header">
         <p className="eyebrow">Contact</p>
-        <h1>Get in touch.</h1>
+        <h1>Let&rsquo;s build something measurable.</h1>
       </div>
       <div className="contact-layout">
         <div className="contact-info">
-          <p className="lead">Reach out directly by email or drop a message below.</p>
+          <p className="lead">Have a project, a role, or an idea you&rsquo;d like to talk about? I&rsquo;d love to hear from you.</p>
           <div className="contact-details">
             <div className="contact-detail">
               <Mail size={18} />

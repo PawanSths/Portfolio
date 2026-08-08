@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { MapPin, Sparkles } from "lucide-react";
-import { getPortfolioContent, publishedOnly } from "@/lib/content-store";
+import { getPortfolioContent, publishedOnly } from "@/services/content-store";
 import { PageTransition } from "@/components/page-transition";
 
 export const dynamic = "force-dynamic";
@@ -12,7 +12,7 @@ export default async function AboutPage() {
     <PageTransition className="page-content">
       <div className="page-header">
         <p className="eyebrow">About Me</p>
-        <h1>Engineering mindset, data curiosity, practical software taste.</h1>
+        <h1>Computer Engineering student building intelligent AI/ML systems, autonomous LLM agents, and modern full-stack web applications.</h1>
       </div>
 
       <div className="about-layout">
@@ -43,16 +43,16 @@ export default async function AboutPage() {
 
           <div className="about-highlights">
             <div className="highlight-card">
-              <strong>Focus</strong>
-              <span>AI, ML, Data Science</span>
+              <strong>Built</strong>
+              <span>U-Net for urban sprawl — 85% accuracy</span>
             </div>
             <div className="highlight-card">
               <strong>Languages</strong>
               <span>Python, TypeScript</span>
             </div>
             <div className="highlight-card">
-              <strong>Tools</strong>
-              <span>Jupyter, Git, VS Code</span>
+              <strong>Pipeline</strong>
+              <span>pandas → TensorFlow → deployed API</span>
             </div>
           </div>
         </div>

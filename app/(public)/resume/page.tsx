@@ -1,5 +1,5 @@
 import { Download } from "lucide-react";
-import { getPortfolioContent, publishedOnly } from "@/lib/content-store";
+import { getPortfolioContent, publishedOnly } from "@/services/content-store";
 import { PageTransition } from "@/components/page-transition";
 
 export const dynamic = "force-dynamic";
