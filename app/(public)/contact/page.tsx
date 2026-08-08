@@ -12,7 +12,7 @@ export default async function ContactPage() {
     <PageTransition className="page-content">
       <div className="page-header">
         <p className="eyebrow">Contact</p>
-        <h1>Let&rsquo;s build something measurable.</h1>
+        <h1>Let&rsquo;s build something together.</h1>
       </div>
       <div className="contact-layout">
         <div className="contact-info">

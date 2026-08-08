@@ -344,16 +344,8 @@
       "credentialUrl": "https://example.com",
       "summary": "Explored core concepts of artificial intelligence, ethical considerations, prompt engineering techniques, and practical strategies for utilizing generative AI.",
       "status": "published"
-    },
-    {
-      "id": "ibm-data-science",
-      "title": "Understanding LLMs and Retrieval-Augmented Generation (RAG)",
-      "issuer": "PDSC",
-      "date": "2025",
-      "credentialUrl": "https://coursera.org/",
-      "summary": "Learned how LLMs generate text and how retrieval-augmented generation grounds them in real data.",
-      "status": "published"
     }
+   
   ],
   "media": []
 }
